@@ -1,93 +1,116 @@
 html, body {
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden; 
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: sans-serif;
 }
-
+ 
 .main-header {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #021d51;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    gap: 20px;
-    width: 100%;       
+    padding: 1vh 2vw; /* Proportionnel à la hauteur et largeur */
+    gap: 2vw;
+    width: 100%;      
     box-sizing: border-box;
 }
-
+ 
 .logo {
-    margin-right: 10px; 
+    margin-right: 1vw;
 }
-
+ 
+#Efrei {
+    width: 25vw;    /* Environ 400px sur un écran standard */
+    height: auto;   /* Garder le ratio de l'image */
+}
+ 
 .header-buttons {
-    margin-right: auto;
+    position: absolute;
+    right: 2%;
 }
-
+ 
 .lien {
     color: white;
     text-decoration: none;
-    margin-left: 20px; 
-    font-size: 18px;
+    margin-left: 2vw;
+    font-size: 1.2vw; /* S'adapte à la largeur de l'écran */
 }
-
+ 
 .btn-login {
     background-color: #007bff;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 0.8vh 1.5vw;
+    border-radius: 0.5vw;
     text-decoration: none;
     transition: background 0.3s;
+    font-size: 1.1vw;
 }
-
+ 
 .btn-login:hover {
     background-color: #0056b3;
 }
-
+ 
 .main-footer {
     background-color: #001946;
-    padding: 20px;
-    margin-top: 50px;
+    padding: 3vh 2vw;
+    margin-top: 5vh;
     position: relative;
-    min-height: 150px;
-    width: 100%;       
-    box-sizing: border-box; 
+    min-height: 15vh;
+    width: 100%;      
+    box-sizing: border-box;
 }
-
+ 
 .txtFooter {
     color: white;
-    text-decoration: underline; 
-    line-height: 1.6; }
-
+    text-decoration: underline;
+    line-height: 1.6;
+    font-size: 1vw;
+}
+ 
 .titreFooter {
     color: #b0b0b0;
-    text-decoration: none;     
-    display: inline-block;     
-    width: 100%;               
+    text-decoration: none;    
+    display: inline-block;    
+    width: 100%;              
     font-weight: bold;
-    margin-top: 15px;
-    text-decoration-skip-ink: none; 
+    margin-top: 2vh;
+    font-size: 1.2vw;
 }
-
+ 
 .logoFooter {
     position: absolute;
     bottom: 0;  
-    right: 0;   
-    height: 300px;
+    right: 0;  
+    height: 30vh; /* 30% de la hauteur de l'écran */
+    width: auto;
 }
-
+ 
 #titreAcceuil {
-    text-align: center;     
+    text-align: center;    
     width: fit-content;      
-    margin-left: 20px;     
-    
-   
+    margin-left: 5vw;    
     font-weight: bold;
-    font-size: 100px;
+    font-size: 8vw; /* Très grand titre adaptatif */
     line-height: 1.2;
 }
+ 
 #imageaccueil {
-    display: block;    
-    margin-left: 0;    
-    margin-right: auto; 
-    width: 300px;     
+    display: flex;    
+    justify-content: center;
+    width: 20vw; /* Taille adaptative */
+    margin: 0 auto;
+}
+ 
+#apropos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E7E6E6;
+    font-size: 12vw; /* Texte géant qui s'adapte */
 }
