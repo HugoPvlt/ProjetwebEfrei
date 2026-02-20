@@ -364,3 +364,64 @@ span.psw {
 .btn-register:hover {
     opacity: 0.8;
 }
+#imgContacteAcceuil{
+    display: flex;    
+    justify-content: center;
+    width: 43vw;
+    margin: 0 auto;
+    position: relative;
+    left: 27%;
+    clip-path: polygon(76% 0, 100% 27%, 100% 100%, 0 100%, 0 0);
+}
+#TitreAcceuil3{
+    top: 269%;
+    left: -5%;
+    position: absolute;
+    display: inline-block;
+    background-color: #ffcdd2;
+    color: #021d51;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2vw;
+    padding: 1vw 5vw;
+    border-radius: 1vw;
+    transition: transform 0.2s, background 0.3s;
+    margin-left: 18vw; 
+    margin-top: -2vw; 
+}
+#txtAcceuil3 {
+    position: absolute;
+    left: 5vw;            
+    top: 270%;             
+     
+    
+    text-align: center;   
+    width: fit-content;   
+    
+    font-weight: bold;
+    font-size: 2vw;
+    line-height: 1.2;
+    margin-left: 0;       
+}
+
+#btnRDV{
+    top: 350%;
+    left: -5%;
+    position: absolute;
+    display: inline-block;
+    background-color: #0B2446;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2vw;
+    padding: 1vw 5vw;
+    border-radius: 1vw;
+    transition: transform 0.2s, background 0.3s;
+    margin-left: 18vw; 
+    margin-top: -2vw;
+}
+#btnRDV:hover{
+    opacity: 0.8;
+    transform: scale(1.05);  
+
+}
