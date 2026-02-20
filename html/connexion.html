@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset='utf-8'>
-    <title>Connexion/inscription</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Connexion / Inscription</title>
     <link rel='stylesheet' type='text/css' href='../css/style.css'>
-    <script src='main.js'></script>
+    <script src='../js/main.js' defer></script>
 </head>
 <body>
-    
+
+    <form action="action_page.php" method="post">
+        
+        <div class="imgcontainer">
+            <img src="../img/logo.png" alt="logo" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Nom d'utilisateur</b></label>
+            <input type="text" id="uname" placeholder="Entrer le nom d'utilisateur" name="uname" required>
+
+            <label for="psw"><b>Mot de passe</b></label>
+            <input type="password" id="psw" placeholder="Entrer le mot de passe" name="psw" required>
+
+            <button type="submit">Connexion</button>
+            
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn" id="btn-back">Annuler</button>
+            
+            <span class="psw">
+                Mot de passe <a href="#">oublié ?</a>
+            </span>
+        </div>
+
+    </form>
+
 </body>
 </html>
