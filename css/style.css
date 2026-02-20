@@ -15,7 +15,7 @@ html, body {
     background-color: #021d51;
     display: flex;
     align-items: center;
-    padding: 1vh 2vw; /* Proportionnel à la hauteur et largeur */
+    padding: 1vh 2vw; 
     gap: 2vw;
     width: 100%;      
     box-sizing: border-box;
@@ -26,8 +26,8 @@ html, body {
 }
  
 #Efrei {
-    width: 25vw;    /* Environ 400px sur un écran standard */
-    height: auto;   /* Garder le ratio de l'image */
+    width: 25vw;    
+    height: auto;  
 }
  
 .header-buttons {
@@ -39,7 +39,7 @@ html, body {
     color: white;
     text-decoration: none;
     margin-left: 2vw;
-    font-size: 1.2vw; /* S'adapte à la largeur de l'écran */
+    font-size: 1.2vw; 
 }
  
 .btn-login {
@@ -87,30 +87,142 @@ html, body {
     position: absolute;
     bottom: 0;  
     right: 0;  
-    height: 30vh; /* 30% de la hauteur de l'écran */
+    height: 30vh; 
     width: auto;
 }
  
 #titreAcceuil {
+    position:absolute;
     text-align: center;    
     width: fit-content;      
     margin-left: 5vw;    
     font-weight: bold;
-    font-size: 8vw; /* Très grand titre adaptatif */
+    font-size: 5vw;
     line-height: 1.2;
+    
 }
  
 #imageaccueil {
     display: flex;    
     justify-content: center;
-    width: 20vw; /* Taille adaptative */
+    width: 62vw; 
     margin: 0 auto;
+    position:relative;
+    left: 19%;
+    top:20%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 34% 100%, 0 62%);
 }
  
+
+.AcceuilP2 {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.TitreAcceuil2 {
+    position: absolute;
+    z-index: 1; 
+    width: 100%;
+    text-align: center;
+    font-size: 10vw;
+    font-weight: 800;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    line-height: 1.25; 
+    margin: 0;
+}
+
+.profiles-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    max-width: none;
+    padding: 0 15vw; 
+    box-sizing: border-box; 
+}
+
+.profile-card {
+    text-align: center;
+    width: 10; 
+}
+
+.name, .role {
+    margin: 5px 0;
+    width: 100%;
+    font-size: large;
+}
+
+.profile-card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 #apropos {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #E7E6E6;
-    font-size: 12vw; /* Texte géant qui s'adapte */
+    font-size: 10vw; 
+}
+ 
+#noms-prenoms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;  
+}
+ 
+#noms-prenoms a {
+    text-decoration: none;
+    color :#0056b3 ;
+}
+ 
+.separator {
+    margin: 0 15px;
+}
+ 
+.presentation_site {
+    border-radius: 1vw;
+    border-style :dashed;
+    color: black;
+    border-width: 5px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+ 
+.legende_presentation {
+    text-decoration: underline;
+    font-size: 2vw;
+}
+ 
+.lien :hover {
+    color: lightgrey;
+}
+ 
+ 
+.main-header {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #021d51;
+    display: flex;
+    align-items: center;
+    padding: 1vh 2vw; 
+    gap: 2vw;
+    width: 100%;      
+    box-sizing: border-box;
+    background: linear-gradient(
+        to bottom,
+        #0a2a5e 0%,
+        #183a75 35%,
+        #274b8c 70%,
+        #8fa3c7 100%
+    );
 }
