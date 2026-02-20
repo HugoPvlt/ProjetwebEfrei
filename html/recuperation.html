@@ -3,9 +3,8 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Connexion / Inscription</title>
+    <title>Récupération de mot de passe - Efrei</title>
     <link rel='stylesheet' type='text/css' href='../css/style.css'>
-    <script src='../js/main.js' defer></script>
 </head>
 <body>
 
@@ -26,30 +25,24 @@
     </header>
 
     <main class="login-page">
-        <form action="action_page.php" method="post" class="auth-form">
-
-            <div class="container">
-                <label for="uname"><b>Nom d'utilisateur</b></label>
-                <input type="text" id="uname" placeholder="Entrer le nom d'utilisateur" name="uname" required>
-
-                <label for="psw"><b>Mot de passe</b></label>
-                <input type="password" id="psw" placeholder="Entrer le mot de passe" name="psw" required>
-
-                <div class="auth-buttons">
-                    <button class="submit" type="submit">Connexion</button>
-                    <a href="inscription.html" class="btn-register" style="text-decoration: none;">S'inscrire</a>
-                </div>
-                
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
-                </label>
+        <form action="reset_password_action.php" method="post" class="auth-form">
+            
+            <div class="imgcontainer">
+                <h2>Réinitialiser le mot de passe</h2>
+                <p>Saisissez votre adresse email pour recevoir un lien de récupération.</p>
             </div>
 
             <div class="container">
-                <button type="button" class="cancelbtn" id="btn-back" onclick="history.back()">Annuler</button>
-                <span class="psw">
-                    Mot de passe <a href="recuperation.html">oublié ?</a>
-                </span>
+                <label for="email"><b>Email du compte</b></label>
+                <input type="email" id="email" placeholder="votre-email@exemple.com" name="email" required>
+
+                <div class="auth-buttons">
+                    <button class="submit" type="submit">Envoyer le lien</button>
+                </div>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn" onclick="window.location.href='connexion.html'">Retour à la connexion</button>
             </div>
         </form>
     </main>

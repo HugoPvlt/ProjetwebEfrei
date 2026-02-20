@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Inscription - Efrei</title>
+    <link rel='stylesheet' type='text/css' href='../css/style.css'>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img id="Efrei" src="../img/logo.png" alt="Logo Efrei">
+            </a>
+        </div>
+        <nav class="lien">
+            <a class="lien" href="index.html">Accueil</a>
+            <a class="lien" href="formation.html">Cours et formation</a>
+            <a class="lien" href="contact.html">Contact</a>
+        </nav>
+        <div class="header-buttons">
+            <a href="connexion.html" class="btn-login">Connexion/inscription</a>
+        </div>
+    </header>
+
+    <main class="login-page">
+        <form action="register_action.php" method="post" class="auth-form">
+            <div class="imgcontainer">
+                <h2>Créer un compte</h2>
+                <p>Veuillez remplir ce formulaire pour vous inscrire.</p>
+            </div>
+
+            <div class="container">
+                <label for="email"><b>Email</b></label>
+                <input type="email" id="email" placeholder="Entrer votre email" name="email" required>
+
+                <label for="uname"><b>Nom d'utilisateur</b></label>
+                <input type="text" id="uname" placeholder="Choisir un nom d'utilisateur" name="uname" required>
+
+                <label for="psw"><b>Mot de passe</b></label>
+                <input type="password" id="psw" placeholder="Créer un mot de passe" name="psw" required>
+
+                <label for="psw-repeat"><b>Répéter le mot de passe</b></label>
+                <input type="password" id="psw-repeat" placeholder="Confirmer le mot de passe" name="psw-repeat" required>
+
+                <button class="btn-register" type="submit">S'inscrire</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn" onclick="window.location.href='connexion.html'">Retour</button>
+                <span class="psw">Déjà un compte ? <a href="connexion.html">Se connecter</a></span>
+            </div>
+        </form>
+    </main>
+
+    <footer class="main-footer">
+        <div class="txtFooter">
+            <div class="titreFooter">Accueil</div>
+            <p>+33 168 289 009</p>
+            <div class="titreFooter"><a class="txtFooter" href="Apropos.html">À propos</a></div>
+            <div class="titreFooter">Campus Paris</div>
+            <a class="txtFooter" href="tel:+33188289001">+33 188 289 001</a>
+            <img class="logoFooter" src="../img/logoFooter.png" alt="Logo Efrei">
+        </div>
+    </footer>
+
+</body>
+</html>
