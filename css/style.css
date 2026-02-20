@@ -274,3 +274,50 @@ span.psw {
     height: 30vh;
     width: auto;
 }
+#TitreFetudiant {
+    position: absolute;
+    right: 5vw;       
+    text-align: right;  
+    width: fit-content;      
+    font-weight: bold;
+    font-size: 5vw;
+    line-height: 1.2;
+}
+
+#PAccesEfrei {
+    position: absolute;
+    right: 5vw;         
+    width: fit-content; 
+    text-align: center; 
+    font-size: 2vw;
+    line-height: 1.2;
+    top:110vw;
+    padding-right: 5vw;
+}
+
+#imgetudiant{
+    margin-left: auto;
+    width: 50vw;
+}
+.btn-efrei {
+    display: inline-block;
+    background-color: #ffcdd2;
+    color: #021d51;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5vw;
+    padding: 1vw 5vw;
+    border-radius: 1vw;
+    transition: transform 0.2s, background 0.3s;
+    
+    
+    margin-left: 18vw; 
+
+   
+    margin-top: -2vw; 
+}
+
+.btn-efrei:hover {
+    background-color: #ef9a9a;
+    transform: scale(1.05);   
+}
