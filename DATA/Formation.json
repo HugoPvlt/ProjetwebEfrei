@@ -1,0 +1,14 @@
+[
+  {
+    "nom": "Cycle Ingénieur informatique & numérique",
+    "description": "La première année de cycle ingénieur (ING1) a pour objectif d’harmoniser les connaissances des étudiants qui intègrent l’Efrei. Cette année de tronc commun se compose d’un semestre à l’international et d’un semestre de cours à Paris ou à Bordeaux.",
+    "responsables": [
+      {
+        "nom": "Jean Dupont",
+        "contact": "jean.dupont@efrei.fr",
+        "role": "Responsable Pédagogique",
+        "photo": "../img/photo_jean.jpg"
+      }
+    ]
+  }
+]
