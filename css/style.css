@@ -24,7 +24,7 @@ html, body {
     align-items: center;
     padding: 1vh 2vw;
     gap: 2vw;
-    width: 100%;      
+    width: 100%;
     box-sizing: border-box;
     background: linear-gradient(
         to bottom,
@@ -40,13 +40,8 @@ html, body {
 }
 
 #Efrei {
-    width: 25vw;    
-    height: auto;  
-}
-
-.header-buttons {
-    position: absolute;
-    right: 2%;
+    width: 25vw;
+    height: auto;
 }
 
 .lien {
@@ -74,59 +69,35 @@ html, body {
     background-color: #0056b3;
 }
 
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
 #titreAcceuil {
     position: absolute;
-    text-align: center;    
-    width: fit-content;      
-    margin-left: 5vw;    
+    text-align: center;
+    width: fit-content;
+    margin-left: 5vw;
     font-weight: bold;
     font-size: 5vw;
     line-height: 1.2;
+    z-index: 2;
+    color: white;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.4);
 }
 
 #imageaccueil {
-    display: flex;    
-    justify-content: center;
+    position: absolute;
+    right: 0;
     width: 62vw;
-    margin: 0 auto;
-    position: relative;
-    left: 19%;
-    top: 20%;
+    height: 100%;
+    object-fit: cover;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 34% 100%, 0 62%);
-}
-
-.presentation_site {
-    border-radius: 1vw;
-    border-style: dashed;
-    color: black;
-    border-width: 5px;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-
-.legende_presentation {
-    text-decoration: underline;
-    font-size: 2vw;
-}
-
-#apropos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #E7E6E6;
-    font-size: 10vw;
-}
-
-#noms-prenoms {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3vw;  
-}
-
-#noms-prenoms a {
-    text-decoration: none;
-    color: #0056b3;
 }
 
 .AcceuilP2 {
@@ -180,7 +151,7 @@ html, body {
 .name {
     margin-top: 1vw;
     font-weight: bold;
-    font-size: 1.1vw; 
+    font-size: 1.1vw;
     color: #333;
 }
 
@@ -191,11 +162,119 @@ html, body {
     line-height: 1.2;
 }
 
+.section-etudiant {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    padding: 6vw 5vw;
+    background-color: #f9f9f9;
+}
+
+#TitreFetudiant {
+    font-weight: bold;
+    font-size: 3.5vw;
+    line-height: 1.2;
+    margin: 0 0 1.5vw 0;
+    color: #0B2446;
+}
+
+#PAccesEfrei {
+    font-size: 1.3vw;
+    line-height: 1.6;
+    margin-bottom: 2vw;
+    color: #444;
+}
+
+#imgetudiant {
+    width: 42vw;
+    flex-shrink: 0;
+    border-radius: 1vw;
+}
+
+.etudiant-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btn-efrei {
+    display: inline-block;
+    background-color: #ffcdd2;
+    color: #021d51;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2vw;
+    padding: 0.8vw 3vw;
+    border-radius: 1vw;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn-efrei:hover {
+    background-color: #ef9a9a;
+    transform: scale(1.05);
+}
+
+.section-contact {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    padding: 6vw 5vw;
+    background-color: white;
+}
+
+#imgContacteAcceuil {
+    width: 43vw;
+    flex-shrink: 0;
+    border-radius: 1vw;
+    clip-path: polygon(76% 0, 100% 27%, 100% 100%, 0 100%, 0 0);
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#TitreAcceuil3 {
+    display: inline-block;
+    background-color: #ffcdd2;
+    color: #021d51;
+    font-weight: bold;
+    font-size: 1.1vw;
+    padding: 0.6vw 2vw;
+    border-radius: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+#txtAcceuil3 {
+    font-size: 1.15vw;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 2vw;
+}
+
+#btnRDV {
+    display: inline-block;
+    background-color: #0B2446;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1vw;
+    padding: 0.8vw 3vw;
+    border-radius: 1vw;
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+#btnRDV:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
 form {
     border: 3px solid #f1f1f1;
 }
 
-input[type=text], 
+input[type=text],
 input[type=password],
 input[type=email] {
     width: 100%;
@@ -207,7 +286,7 @@ input[type=email] {
 }
 
 .submit {
-    background-color :#007bff;
+    background-color: #007bff;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -216,15 +295,13 @@ input[type=email] {
     width: 100%;
 }
 
-.submit:hover {
-    opacity: 0.8;
-}
+.submit:hover { opacity: 0.8; }
 
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
-    border : none;
+    border: none;
     color: white;
     cursor: pointer;
 }
@@ -234,93 +311,11 @@ input[type=email] {
     margin: 24px 0 12px 0;
 }
 
-img.avatar {
-    width: 40%;
-}
+img.avatar { width: 40%; }
 
 span.psw {
     float: right;
     padding-top: 16px;
-}
-
-.main-footer {
-    background-color: #001946;
-    padding: 3vh 2vw;
-    margin-top: 5vh;
-    position: relative;
-    min-height: 15vh;
-    width: 100%;      
-    box-sizing: border-box;
-}
-
-.txtFooter {
-    color: white;
-    text-decoration: underline;
-    line-height: 1.6;
-    font-size: 1vw;
-}
-
-.titreFooter {
-    color: #b0b0b0;
-    text-decoration: none;    
-    display: inline-block;    
-    width: 100%;              
-    font-weight: bold;
-    margin-top: 2vh;
-    font-size: 1.2vw;
-}
-
-.logoFooter {
-    position: absolute;
-    bottom: 0;  
-    right: 0;  
-    height: 30vh;
-    width: auto;
-}
-
-#TitreFetudiant {
-    position: absolute;
-    right: 5vw;       
-    text-align: right;  
-    width: fit-content;      
-    font-weight: bold;
-    font-size: 5vw;
-    line-height: 1.2;
-}
-
-#PAccesEfrei {
-    position: absolute;
-    right: 5vw;          
-    width: fit-content; 
-    text-align: center; 
-    font-size: 2vw;
-    line-height: 1.2;
-    top:110vw;
-    padding-right: 5vw;
-}
-
-#imgetudiant{
-    margin-left: auto;
-    width: 50vw;
-}
-
-.btn-efrei {
-    display: inline-block;
-    background-color: #ffcdd2;
-    color: #021d51;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5vw;
-    padding: 1vw 5vw;
-    border-radius: 1vw;
-    transition: transform 0.2s, background 0.3s;
-    margin-left: 18vw; 
-    margin-top: -2vw; 
-}
-
-.btn-efrei:hover {
-    background-color: #ef9a9a;
-    transform: scale(1.05);   
 }
 
 .login-page {
@@ -361,69 +356,101 @@ span.psw {
     box-sizing: border-box;
 }
 
-.btn-register:hover {
-    opacity: 0.8;
-}
-#imgContacteAcceuil{
-    display: flex;    
-    justify-content: center;
-    width: 43vw;
-    margin: 0 auto;
-    position: relative;
-    left: 27%;
-    clip-path: polygon(76% 0, 100% 27%, 100% 100%, 0 100%, 0 0);
-}
-#TitreAcceuil3{
-    top: 269%;
-    left: -5%;
-    position: absolute;
-    display: inline-block;
-    background-color: #ffcdd2;
-    color: #021d51;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2vw;
-    padding: 1vw 5vw;
-    border-radius: 1vw;
-    transition: transform 0.2s, background 0.3s;
-    margin-left: 18vw; 
-    margin-top: -2vw; 
-}
-#txtAcceuil3 {
-    position: absolute;
-    left: 5vw;            
-    top: 270%;             
-     
-    
-    text-align: center;   
-    width: fit-content;   
-    
-    font-weight: bold;
-    font-size: 2vw;
-    line-height: 1.2;
-    margin-left: 0;       
+.btn-register:hover { opacity: 0.8; }
+
+.main-footer {
+    background: #06102c;
+    color: rgba(255,255,255,0.75);
+    padding: 0;
+    margin-top: auto;
+    font-family: 'DM Sans', sans-serif;
 }
 
-#btnRDV{
-    top: 350%;
-    left: -5%;
-    position: absolute;
-    display: inline-block;
-    background-color: #0B2446;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2vw;
-    padding: 1vw 5vw;
-    border-radius: 1vw;
-    transition: transform 0.2s, background 0.3s;
-    margin-left: 18vw; 
-    margin-top: -2vw;
+.footer-accent-line {
+    width: 100%;
+    height: clamp(0.15rem, 0.3vh, 0.3rem);
+    background: linear-gradient(90deg, #1a56db 0%, #3b82f6 50%, #93c5fd 100%);
 }
-#btnRDV:hover{
-    opacity: 0.8;
-    transform: scale(1.05);  
 
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    gap: clamp(1.5rem, 3vw, 4rem);
+    padding: clamp(2rem, 5vh, 4.5rem) 6vw clamp(1.8rem, 4vh, 4rem);
+    border-bottom: 0.08vh solid rgba(255,255,255,0.08);
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.6rem, 1.2vh, 1.4rem);
+}
+
+.footer-tagline {
+    font-size: clamp(0.75rem, 0.85vw, 0.95rem);
+    color: rgba(255,255,255,0.5);
+    line-height: 1.6;
+    max-width: 22vw;
+}
+
+.footer-col h4 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(0.62rem, 0.65vw, 0.82rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.4);
+    margin: 0 0 clamp(0.8rem, 1.6vh, 1.5rem) 0;
+}
+
+.footer-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.4rem, 0.9vh, 0.9rem);
+}
+
+.footer-col ul li a {
+    color: rgba(255,255,255,0.68);
+    text-decoration: none;
+    font-size: clamp(0.75rem, 0.85vw, 0.95rem);
+    transition: color 0.2s;
+}
+
+.footer-col ul li a:hover { color: #93c5fd; }
+
+.footer-contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.15rem, 0.4vh, 0.4rem);
+    margin-bottom: clamp(0.5rem, 1.1vh, 1.1rem);
+}
+
+.footer-contact-item span:first-child {
+    font-size: clamp(0.6rem, 0.65vw, 0.75rem);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.35);
+    font-weight: 600;
+}
+
+.footer-contact-item span:last-child {
+    color: rgba(255,255,255,0.75);
+    font-size: clamp(0.75rem, 0.85vw, 0.95rem);
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(0.8rem, 1.8vh, 1.6rem) 6vw;
+}
+
+.footer-copy {
+    font-size: clamp(0.62rem, 0.72vw, 0.82rem);
+    color: rgba(255,255,255,0.28);
 }
 
 .description-container {
@@ -433,7 +460,6 @@ span.psw {
     margin: 20px 0;
     line-height: 1.6;
 }
-
 
 .table-responsables {
     width: 100%;
@@ -447,10 +473,7 @@ span.psw {
     text-align: left;
 }
 
-.table-responsables th {
-    background-color: #f8f8f8;
-}
-
+.table-responsables th { background-color: #f8f8f8; }
 
 #barre-recherche {
     width: 300px;

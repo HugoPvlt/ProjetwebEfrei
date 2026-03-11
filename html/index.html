@@ -19,27 +19,25 @@
             <a class="lien" href="formation.html">Cours et formation</a>
             <a class="lien" href="contact.html">Contact</a>
         </nav>
-        <div class="header-buttons">
-            <a href="connexion.html" class="btn-login">Connexion/inscription</a>
-        </div>
     </header>
 
-    <main class="content-wrapper">
+    <main>
+
+        <!-- Hero -->
         <section class="hero-section">
             <h1 id="titreAcceuil">Département <br> informatique <br> Paris</h1>
             <img id="imageaccueil" src="../img/imageacceuil.png" alt="Image d'Efrei">
         </section>
 
+        <!-- Profiles -->
         <section class="AcceuilP2">
             <h2 class="TitreAcceuil2">EFREI - Grande <br> école <br> d'informatique</h2>
-
             <div class="profiles-container">
                 <div class="profile-card">
                     <img id="imgMenier" src="../img/Menier.png" alt="Frédéric Menier">
                     <p class="name"><b>Frédéric Menier</b></p>
                     <p class="role">Directeur général de l'Efrei</p>
                 </div>
-
                 <div class="profile-card">
                     <img id="imgBraconnier" src="../img/Braconnier.png" alt="Stéphane Braconnier">
                     <p class="name"><b>Stéphane Braconnier</b></p>
@@ -47,54 +45,66 @@
                 </div>
             </div>
         </section>
-        <section>
-            <h1 id="TitreFetudiant">Futur étudiant ?</h1>
-            <p id="PAccesEfrei">
-                Accéder au site web officiel de<br>
-                 l'Efrei et réaliser une candidature<br>
-                 pour rejoindre l'Efrei.
-            </p>
+
+        <!-- Futur étudiant -->
+        <section class="section-etudiant">
             <img id="imgetudiant" src="../img/Etudiant.png" alt="Etudiant">
-            <a href="https://www.efrei.fr/..." class="btn-efrei">Efrei</a>
-            <section>
+            <div class="etudiant-text">
+                <h1 id="TitreFetudiant">Futur étudiant ?</h1>
+                <p id="PAccesEfrei">
+                    Accéder au site web officiel de l'Efrei et réaliser une candidature pour rejoindre l'Efrei.
+                </p>
+                <a href="https://www.efrei.fr/" class="btn-efrei">Efrei</a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section-contact">
+            <div class="contact-text">
                 <h2 id="TitreAcceuil3">CONTACTEZ-NOUS</h2>
                 <p id="txtAcceuil3">
-    orem ipsum dolor sit amet, consectetur<br>
-    adipiscing elit. Morbi sagittis lacinia<br>
-    mauris ac finibus. Nam lacus tortor,<br>
-    iaculis in laoreet a, malesuada et eros.<br>
-    Donec et justo rutrum, pulvinar purus<br>
-    in, dictum diam. Vestibulum risus sem,<br>
-    porttitor vitae mi ac, lacinia semper<br>
-    massa. Morbi elementum orci eu odio<br>
-    consequat, a facilisis velit commodo.<br>
-    Vivamus mollis mauris ut orci aliquet<br>
-    placerat. Fusce vehicula at lectus eget<br>
-    mollis. Nunc aliquam ipsum sed urna<br>
-    scelerisque, consequat luctus felis<br>
-    aliquam. Nullam elit erat, aliquet.
-</p>
-            </section>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis lacinia
+                    mauris ac finibus. Nam lacus tortor, iaculis in laoreet a, malesuada et eros.
+                    Donec et justo rutrum, pulvinar purus in, dictum diam. Vestibulum risus sem,
+                    porttitor vitae mi ac, lacinia semper massa. Morbi elementum orci eu odio
+                    consequat, a facilisis velit commodo. Vivamus mollis mauris ut orci aliquet placerat.
+                </p>
+                <a id="btnRDV" href="contact.html">Prendre rendez-vous</a>
+            </div>
             <img id="imgContacteAcceuil" src="../img/ContacterNous.png" alt="ContacterNous">
-            <a id="btnRDV" href="contact.html">Prendre rendez-vous</a>
+        </section>
+
     </main>
 
     <footer class="main-footer">
-        <div class="txtFooter">
-            <div class="titreFooter">Accueil</div>
-            <p>+33 168 289 009</p>
-            
-            <div class="titreFooter"><a class="txtFooter" href="Apropos.html">À propos</a></div> 
-
-            <div class="titreFooter">Campus Paris</div>
-            <p>+33 188 289 001</p>
-            <a class="txtFooter" href="https://maps.google.com">Av. de la République, 94800 Villejuif</a>
-
-            <div class="titreFooter">Campus Bordeaux</div>
-            <p>+33 582 060 162</p>
-            <a class="txtFooter" href="https://maps.google.com">Lucien Faure, 33000 Bordeaux</a>
-
-            <img class="logoFooter" src="../img/logoFooter.png" alt="Logo Efrei">
+        <div class="footer-accent-line"></div>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <p class="footer-tagline">Former les ingénieurs et experts du numérique qui construisent le monde de demain.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="formation.html">Formations</a></li>
+                    <li><a href="contact.html">Contact & Admissions</a></li>
+                    <li><a href="Apropos.html">À propos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <div class="footer-contact-item">
+                    <span>Adresse</span>
+                    <span>30-32 Av. de la République, 94800 Villejuif</span>
+                </div>
+                <div class="footer-contact-item">
+                    <span>Téléphone</span>
+                    <span>+33 1 88 28 90 01</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-copy">© 2025 EFREI Paris — Département Informatique</span>
         </div>
     </footer>
 

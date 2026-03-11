@@ -1,15 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const backButton = document.getElementById('btn-back');
-    if (backButton) {
-        backButton.addEventListener('click', () => {
-            if (window.history.length > 1) {
-                window.history.back();
-            } else {
-                window.location.href = "index.html";
-            }
-        });
-    }
-
     const barreRecherche = document.getElementById('barre-recherche');
     const sectionResultat = document.getElementById('resultat-formation');
     const messageVide = document.getElementById('message-vide');
@@ -53,4 +41,3 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-});
