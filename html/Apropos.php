@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset='utf-8'>
-    <title>A propos</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' href='../css/style.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    <header class="main-header">
-        <div class="logo">
-            <a href="index.html">
-                <img id="Efrei" src="../img/logo.png" alt="Logo Efrei">
-            </a>
-        </div>
-        <nav class="lien">
-            <a class="lien" href="index.html">Accueil</a>
-            <a class="lien" href="formation.html">Cours et formation</a>
-            <a class="lien" href="contact.html">Contact</a>
-        </nav>
-    </header>
-
+<?php include '../php/header.php'; ?>
     <main>
         <h1 id="apropos">À propos de nous</h1>
         <h2 id="noms-prenoms">
@@ -40,37 +18,4 @@
         </fieldset>
     </main>
 
-    <footer class="main-footer">
-        <div class="footer-accent-line"></div>
-        <div class="footer-top">
-            <div class="footer-brand">
-                <p class="footer-tagline">Former les ingénieurs et experts du numérique qui construisent le monde de demain.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Navigation</h4>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="formation.html">Formations</a></li>
-                    <li><a href="contact.html">Contact & Admissions</a></li>
-                    <li><a href="Apropos.html">À propos</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <div class="footer-contact-item">
-                    <span>Adresse</span>
-                    <span>30-32 Av. de la République, 94800 Villejuif</span>
-                </div>
-                <div class="footer-contact-item">
-                    <span>Téléphone</span>
-                    <span>+33 1 88 28 90 01</span>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <span class="footer-copy">© 2025 EFREI Paris — Département Informatique</span>
-        </div>
-    </footer>
-
-</body>
-</html>
+    <script src="../js/main.js" defer></script><?php include '../php/footer.php'; ?>
