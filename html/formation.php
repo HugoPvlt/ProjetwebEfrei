@@ -1,37 +1,39 @@
 <?php include '../php/header.php'; ?>
 
-    <main class="container-formation">
-    <h1>Cours et formation</h1>
+<main class="container-formation">
+    <h1>Cours &amp; Formations</h1>
+    <p class="page-subtitle">Recherchez un programme pour consulter ses détails et ses responsables pédagogiques.</p>
 
     <div class="search-section">
-        <input type="text" id="barre-recherche" placeholder="Rechercher une formation...">
+        <input type="text" id="barre-recherche" placeholder="Ex : Cycle Ingénieur, Informatique…" autocomplete="off">
     </div>
 
-    <div id="resultat-formation" style="display: none;"> <h2 id="nom-formation">Nom de la formation</h2>
+    <div id="resultat-formation">
+        <h2 id="nom-formation"></h2>
 
         <div class="description-container">
             <h3>Description</h3>
-            <p id="description-texte">
-                </p>
+            <p id="description-texte"></p>
         </div>
 
-        <h2>Responsables de formation</h2>
+        <h2 class="titre-responsables">
+            Responsables pédagogiques
+        </h2>
         <table class="table-responsables">
             <thead>
                 <tr>
-                    <th>Nom</th>
-                    <th>Contact</th>
-                    <th>Rôle</th>
                     <th>Photo</th>
+                    <th>Nom</th>
+                    <th>Rôle</th>
+                    <th>Contact</th>
                 </tr>
             </thead>
-            <tbody id="corps-tableau">
-                </tbody>
+            <tbody id="corps-tableau"></tbody>
         </table>
-
     </div>
-    
+
     <p id="message-vide">Saisissez le nom d'une formation pour voir les détails.</p>
 </main>
 
-    <script src="../js/main.js" defer></script><?php include '../php/footer.php'; ?>   
+<script src="../js/main.js" defer></script>
+<?php include '../php/footer.php'; ?>
