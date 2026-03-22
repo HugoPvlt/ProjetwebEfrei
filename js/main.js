@@ -1,4 +1,3 @@
-// ── Lien actif dans la nav ────────────────────────────────────
 document.addEventListener('DOMContentLoaded', function() {
     var currentPage = window.location.pathname.split('/').pop();
     var liens = document.querySelectorAll('.lien');
@@ -8,79 +7,87 @@ document.addEventListener('DOMContentLoaded', function() {
             liens[i].classList.add('active');
         }
     }
-});
 
-// ── Recherche de formation ────────────────────────────────────
-var barreRecherche  = document.getElementById('barre-recherche');
-var sectionResultat = document.getElementById('resultat-formation');
-var messageVide     = document.getElementById('message-vide');
+    var barreRecherche  = document.getElementById('barre-recherche');
+    var sectionResultat = document.getElementById('resultat-formation');
+    var messageVide     = document.getElementById('message-vide');
 
-if (barreRecherche) {
-    var debounceTimer;
+    if (barreRecherche) {
+        var debounceTimer;
 
-    barreRecherche.addEventListener('input', function(e) {
-        clearTimeout(debounceTimer);
-        var valeur = e.target.value;
-        debounceTimer = setTimeout(function() {
-            rechercherFormation(valeur);
-        }, 250);
-    });
+        barreRecherche.addEventListener('input', function(e) {
+            clearTimeout(debounceTimer);
+            var valeur = e.target.value;
+            debounceTimer = setTimeout(function() {
+                rechercherFormation(valeur);
+            }, 250);
+        });
 
-    function rechercherFormation(saisie) {
-        var terme = saisie.toLowerCase().trim();
+        function rechercherFormation(saisie) {
+            var terme = saisie.toLowerCase().trim();
 
-        if (terme.length < 2) {
-            sectionResultat.style.display = 'none';
-            messageVide.style.display     = 'block';
-            messageVide.textContent       = "Saisissez le nom d'une formation pour voir les détails.";
-            return;
-        }
+            if (terme.length < 2) {
+                sectionResultat.style.display = 'none';
+                messageVide.style.display = 'block';
+                messageVide.textContent = "Saisissez le nom d'une formation pour voir les détails.";
+                return;
+            }
 
-        fetch('../DATA/Formation.json')
-            .then(function(reponse) { return reponse.json(); })
-            .then(function(listeFormations) {
-                var formationTrouvee = null;
-                for (var i = 0; i < listeFormations.length; i++) {
-                    if (listeFormations[i].nom.toLowerCase().includes(terme)) {
-                        formationTrouvee = listeFormations[i];
-                        break;
+            fetch('../DATA/Formation.json')
+                .then(function(reponse) { 
+                    if (!reponse.ok) throw new Error();
+                    return reponse.json(); 
+                })
+                .then(function(listeFormations) {
+                    var resultats = listeFormations.filter(function(f) {
+                        return f.nom.toLowerCase().includes(terme);
+                    });
+
+                    if (resultats.length > 0) {
+                        afficherListeFormations(resultats);
+                    } else {
+                        sectionResultat.style.display = 'none';
+                        messageVide.style.display = 'block';
+                        messageVide.textContent = 'Aucune formation trouvée pour « ' + saisie + ' ».';
                     }
-                }
-                if (formationTrouvee) {
-                    afficherFormation(formationTrouvee);
-                } else {
-                    sectionResultat.style.display = 'none';
-                    messageVide.style.display     = 'block';
-                    messageVide.textContent       = 'Aucune formation trouvée pour « ' + saisie + ' ».';
-                }
-            })
-            .catch(function(erreur) {
-                console.error('Erreur lors du chargement des formations :', erreur);
-                messageVide.textContent = 'Impossible de charger les formations.';
-            });
-    }
-
-    function afficherFormation(formation) {
-        sectionResultat.style.display = 'block';
-        messageVide.style.display     = 'none';
-
-        document.getElementById('nom-formation').textContent     = formation.nom;
-        document.getElementById('description-texte').textContent = formation.description;
-
-        var corpsTableau = document.getElementById('corps-tableau');
-        var html = '';
-        for (var i = 0; i < formation.responsables.length; i++) {
-            var resp = formation.responsables[i];
-            html += '<tr>';
-            html += '<td><img src="' + resp.photo + '" alt="Photo de ' + resp.nom + '"></td>';
-            html += '<td><strong>' + resp.nom + '</strong></td>';
-            html += '<td>' + resp.role + '</td>';
-            html += '<td><a href="mailto:' + resp.contact + '">' + resp.contact + '</a></td>';
-            html += '</tr>';
+                })
+                .catch(function(erreur) {
+                    console.error(erreur);
+                });
         }
-        corpsTableau.innerHTML = html;
+
+        function afficherListeFormations(formations) {
+            sectionResultat.style.display = 'block';
+            messageVide.style.display = 'none';
+            sectionResultat.innerHTML = ''; 
+
+            formations.forEach(function(formation) {
+                var divFormation = document.createElement('div');
+                divFormation.style.marginBottom = "40px";
+                divFormation.style.borderBottom = "1px solid #ccc";
+                divFormation.style.paddingBottom = "20px";
+                
+                var html = '<h2>' + formation.nom + '</h2>';
+                html += '<div class="description-container"><h3>Description</h3><p>' + formation.description + '</p></div>';
+                html += '<h3>Responsables</h3>';
+                html += '<table class="table-responsables"><thead><tr><th>Photo</th><th>Nom</th><th>Rôle</th><th>Contact</th></tr></thead><tbody>';
+
+                formation.responsables.forEach(function(resp) {
+                    html += '<tr>';
+                    html += '<td><img src="' + resp.photo + '" alt="Photo" style="width:50px; border-radius:50%;"></td>';
+                    html += '<td><strong>' + resp.nom + '</strong></td>';
+                    html += '<td>' + resp.role + '</td>';
+                    html += '<td><a href="mailto:' + resp.contact + '">' + resp.contact + '</a></td>';
+                    html += '</tr>';
+                });
+
+                html += '</tbody></table>';
+                divFormation.innerHTML = html;
+                sectionResultat.appendChild(divFormation);
+            });
+        }
     }
-}
+});
 
 function envoyerMessage() {
     var prenom  = document.getElementById('prenom').value.trim();

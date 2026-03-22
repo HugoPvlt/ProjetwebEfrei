@@ -1,5 +1,23 @@
 [
   {
+    "nom": "Mastère Green IT & Numérique Responsable",
+    "description": "Ce Mastère forme des experts capables de concilier performance technologique et transition écologique. La formation couvre l'écoconception de services numériques, l'analyse de cycle de vie (ACV), la sobriété logicielle et la stratégie RSE, pour réduire l'empreinte environnementale des systèmes d'information en entreprise.",
+    "responsables": [
+      {
+        "nom": "Elisa Girard",
+        "contact": "elisa.girard@efrei.fr",
+        "role": "Responsable de programme Green IT",
+        "photo": "../img/elisa_girard.jpg"
+      },
+      {
+        "nom": "Service Admissions",
+        "contact": "admissions@efrei.fr",
+        "role": "Admissions Paris & Bordeaux",
+        "photo": "../img/logo_efrei_profil.png"
+      }
+    ]
+  },
+  {
     "nom": "Cycle Ingénieur informatique & numérique",
     "description": "La première année de cycle ingénieur (ING1) a pour objectif d’harmoniser les connaissances des étudiants qui intègrent l’Efrei. Cette année de tronc commun se compose d’un semestre à l’international et d’un semestre de cours à Paris ou à Bordeaux.",
     "responsables": [
@@ -8,6 +26,168 @@
         "contact": "jean.dupont@efrei.fr",
         "role": "Responsable Pédagogique",
         "photo": "../img/photo_jean.jpg"
+      }
+    ]
+  },
+  {
+    "nom": "Bachelor Développeur Web & IA",
+    "description": "Ce cursus forme des développeurs polyvalents capables de concevoir des sites web, des applications mobiles et des logiciels durables. Il met l'accent sur le développement Full Stack (Front-end et Back-end) tout en intégrant la maîtrise des outils d'Intelligence Artificielle pour répondre aux besoins actuels des entreprises.",
+    "responsables": [
+      {
+        "nom": "Léa Delacroix",
+        "contact": "lea.delacroix@efrei.fr",
+        "role": "Responsable de formation",
+        "photo": "../img/lea_delacroix.jpg"
+      },
+      {
+        "nom": "Service Admissions",
+        "contact": "admissions@efrei.fr",
+        "role": "Admissions Paris & Bordeaux",
+        "photo": "../img/logo_efrei_profil.png"
+      }
+    ]
+  },
+  {
+    "nom": "Bachelor Cybersécurité & Réseaux",
+    "description": "Ce cursus forme des experts capables de sécuriser les systèmes d'information et les infrastructures réseaux. La formation couvre la détection de vulnérabilités, la mise en place de stratégies de défense et la gestion d'incidents de sécurité, répondant à un besoin critique des entreprises face aux cybermenaces.",
+    "responsables": [
+      {
+        "nom": "Marc Lefebvre",
+        "contact": "marc.lefebvre@efrei.fr",
+        "role": "Responsable de programme",
+        "photo": "../img/marc_lefebvre.jpg"
+      },
+      {
+        "nom": "Service Admissions",
+        "contact": "admissions@efrei.fr",
+        "role": "Admissions Paris & Bordeaux",
+        "photo": "../img/logo_efrei_profil.png"
+      }
+    ]
+  },
+  {
+    "nom": "Bachelor Cybersécurité & Ethical Hacking",
+    "description": "Cette formation s'adresse aux passionnés qui souhaitent apprendre à 'penser comme un attaquant' pour mieux défendre. Elle se concentre sur les tests d'intrusion (pentesting), l'analyse de malwares et la protection avancée des systèmes. L'objectif est de former des experts capables d'identifier les failles avant qu'elles ne soient exploitées.",
+    "responsables": [
+      {
+        "nom": "Thomas Roux",
+        "contact": "thomas.roux@efrei.fr",
+        "role": "Responsable Technique Cyber",
+        "photo": "../img/thomas_roux.jpg"
+      },
+      {
+        "nom": "Service Admissions",
+        "contact": "admissions@efrei.fr",
+        "role": "Admissions Paris & Bordeaux",
+        "photo": "../img/logo_efrei_profil.png"
+      }
+    ]
+  },
+  {
+    "nom": "Bachelor Informatique",
+    "description": "Ce programme permet d'acquérir des bases solides en développement logiciel, systèmes et réseaux. Il est conçu pour offrir une polyvalence maximale, permettant aux étudiants de maîtriser les fondamentaux du code et de l'architecture informatique avant de choisir une spécialisation en 3ème année.",
+    "responsables": [
+      {
+        "nom": "Nicolas Durand",
+        "contact": "nicolas.durand@efrei.fr",
+        "role": "Directeur des Études Bachelor",
+        "photo": "../img/nicolas_durand.jpg"
+      },
+      {
+        "nom": "Service Admissions",
+        "contact": "admissions@efrei.fr",
+        "role": "Admissions Paris & Bordeaux",
+        "photo": "../img/logo_efrei_profil.png"
+      }
+    ]
+  },
+  {
+    "nom": "BTS SIO - Services Informatiques aux Organisations",
+    "description": "Le BTS SIO forme des techniciens supérieurs capables de gérer et de maintenir des parcs informatiques (option SISR) ou de développer des solutions logicielles (option SLAM). C'est une formation courte et concrète de 2 ans qui met l'accent sur les besoins techniques immédiats des entreprises.",
+    "responsables": [
+      {
+        "nom": "Sophie Morel",
+        "contact": "sophie.morel@efrei.fr",
+        "role": "Responsable Pédagogique BTS",
+        "photo": "../img/sophie_morel.jpg"
+      },
+      {
+        "nom": "Service Admissions",
+        "contact": "admissions@efrei.fr",
+        "role": "Admissions Paris & Bordeaux",
+        "photo": "../img/logo_efrei_profil.png"
+      }
+    ]
+  },
+  {
+    "nom": "Mastère Développeur Manager Full Stack",
+    "description": "Ce cursus de haut niveau forme des experts techniques capables de piloter des projets complexes et d'encadrer des équipes de développeurs. La formation approfondit les architectures micro-services, le Cloud et le DevOps, tout en intégrant des compétences en leadership et en stratégie d'entreprise.",
+    "responsables": [
+      {
+        "nom": "Julien Morel",
+        "contact": "julien.morel@efrei.fr",
+        "role": "Responsable de Mastère",
+        "photo": "../img/julien_morel.jpg"
+      },
+      {
+        "nom": "Service Admissions",
+        "contact": "admissions@efrei.fr",
+        "role": "Admissions Paris & Bordeaux",
+        "photo": "../img/logo_efrei_profil.png"
+      }
+    ]
+  },
+  {
+    "nom": "Mastère Data Engineering & IA",
+    "description": "Ce Mastère forme des experts capables de concevoir des infrastructures de données massives (Big Data) et de déployer des modèles d'Intelligence Artificielle en production. La formation met l'accent sur le Cloud Computing, le traitement de données en temps réel et l'éthique de l'IA, pour répondre aux enjeux de transformation numérique des grandes organisations.",
+    "responsables": [
+      {
+        "nom": "Amélie Bernard",
+        "contact": "amelie.bernard@efrei.fr",
+        "role": "Responsable de programme Data",
+        "photo": "../img/amelie_bernard.jpg"
+      },
+      {
+        "nom": "Service Admissions",
+        "contact": "admissions@efrei.fr",
+        "role": "Admissions Paris & Bordeaux",
+        "photo": "../img/logo_efrei_profil.png"
+      }
+    ]
+  },
+  {
+    "nom": "Mastère Cybersécurité",
+    "description": "Ce cursus de haut niveau forme des experts en management de la sécurité des systèmes d'information. Il prépare aux certifications internationales et permet de maîtriser l'audit de sécurité, la gestion de crise cyber, ainsi que les aspects juridiques et stratégiques de la protection des données en entreprise.",
+    "responsables": [
+      {
+        "nom": "Hugo Martin",
+        "contact": "hugo.martin@efrei.fr",
+        "role": "Directeur du programme Cyber",
+        "photo": "../img/hugo_martin.jpg"
+      },
+      {
+        "nom": "Service Admissions",
+        "contact": "admissions@efrei.fr",
+        "role": "Admissions Paris & Bordeaux",
+        "photo": "../img/logo_efrei_profil.png"
+      }
+    ]
+  },
+  {
+    "nom": "Mastère Cybersécurité & Management",
+    "description": "Ce Mastère prépare aux fonctions de Responsable de la Sécurité des Systèmes d'Information (RSSI). Il combine une expertise technique en cyberdéfense avec des compétences managériales avancées : gestion des risques (EBIOS RM), conformité RGPD, audit et pilotage de la stratégie de sécurité globale d'une organisation.",
+    "responsables": [
+      {
+        "nom": "Sophie Alaux",
+        "contact": "sophie.alaux@efrei.fr",
+        "role": "Responsable pédagogique Management Cyber",
+        "photo": "../img/sophie_alaux.jpg"
+      },
+      {
+        "nom": "Service Admissions",
+        "contact": "admissions@efrei.fr",
+        "role": "Admissions Paris & Bordeaux",
+        "photo": "../img/logo_efrei_profil.png"
       }
     ]
   }
