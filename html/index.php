@@ -38,11 +38,7 @@
             <div class="contact-text">
                 <h2 id="TitreAcceuil3">CONTACTEZ-NOUS</h2>
                 <p id="txtAcceuil3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis lacinia
-                    mauris ac finibus. Nam lacus tortor, iaculis in laoreet a, malesuada et eros.
-                    Donec et justo rutrum, pulvinar purus in, dictum diam. Vestibulum risus sem,
-                    porttitor vitae mi ac, lacinia semper massa. Morbi elementum orci eu odio
-                    consequat, a facilisis velit commodo. Vivamus mollis mauris ut orci aliquet placerat.
+                    Vous avez une question sur nos formations, nos admissions ou nos partenariats ? L'équipe de l'EFREI est à votre disposition pour vous accompagner dans votre démarche et vous apporter toutes les informations nécessaires. N'hésitez pas à nous contacter, nous vous répondrons dans les meilleurs délais.
                 </p>
                 <a id="btnRDV" href="contact.html">Prendre rendez-vous</a>
             </div>

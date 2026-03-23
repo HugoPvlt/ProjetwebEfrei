@@ -9,16 +9,14 @@
     </div>
 
     <div id="resultat-formation">
-        <h2 id="nom-formation"></h2>
+        <div id="nom-formation"></div>
 
         <div class="description-container">
-            <h3>Description</h3>
+            <h2>Description</h2>
             <p id="description-texte"></p>
         </div>
 
-        <h2 class="titre-responsables">
-            Responsables pédagogiques
-        </h2>
+        <h2 class="titre-responsables">Responsables pédagogiques</h2>
         <table class="table-responsables">
             <thead>
                 <tr>

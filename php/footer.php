@@ -5,7 +5,7 @@
             <p class="footer-tagline">Former les ingénieurs et experts du numérique qui construisent le monde de demain.</p>
         </div>
         <div class="footer-col">
-            <h4>Navigation</h4>
+            <h3>Navigation</h3>
             <ul>
                 <li><a href="index.php">Accueil</a></li>
                 <li><a href="formation.php">Formations</a></li>
@@ -14,7 +14,7 @@
             </ul>
         </div>
         <div class="footer-col">
-            <h4>Contact</h4>
+            <h3>Contact</h3>
             <div class="footer-contact-item">
                 <span>Adresse</span>
                 <span>30-32 Av. de la République, 94800 Villejuif</span>
