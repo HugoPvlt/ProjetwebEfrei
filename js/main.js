@@ -1,12 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var currentPage = window.location.pathname.split('/').pop();
-    var liens = document.querySelectorAll('.lien');
-    for (var i = 0; i < liens.length; i++) {
-        var href = liens[i].getAttribute('href');
-        if (href && href.includes(currentPage) && currentPage !== '') {
-            liens[i].classList.add('active');
-        }
-    }
+    // prend en valeur les différents éléments de la page 
 
     var barreRecherche  = document.getElementById('barre-recherche');
     var sectionResultat = document.getElementById('resultat-formation');
@@ -16,31 +9,23 @@ document.addEventListener('DOMContentLoaded', function() {
         var debounceTimer;
 
         barreRecherche.addEventListener('input', function(e) {
-            clearTimeout(debounceTimer);
-            var valeur = e.target.value;
-            debounceTimer = setTimeout(function() {
-                rechercherFormation(valeur);
-            }, 250);
-        });
-
+    rechercherFormation(e.target.value);
+});
         function rechercherFormation(saisie) {
-            var terme = saisie.toLowerCase().trim();
+            var terme = saisie.toLowerCase().trim();// évite la casse en les changeant en minuscule
 
-            if (terme.length < 2) {
+            if (terme.length < 2) {// obligé de saisir au moins 2 caractères
                 sectionResultat.style.display = 'none';
                 messageVide.style.display = 'block';
                 messageVide.textContent = "Saisissez le nom d'une formation pour voir les détails.";
                 return;
             }
 
-            fetch('../DATA/Formation.json')
-                .then(function(reponse) { 
-                    if (!reponse.ok) throw new Error();
-                    return reponse.json(); 
-                })
+            fetch('../DATA/Formation.json')// recherche dans le json du nom de la formation 
+                
                 .then(function(listeFormations) {
                     var resultats = listeFormations.filter(function(f) {
-                        return f.nom.toLowerCase().includes(terme);
+                        return f.nom.toLowerCase().includes(terme);// prend toutes les formation qui contient le mot entrer par l'utilisateur
                     });
 
                     if (resultats.length > 0) {
@@ -56,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
         }
 
-        function afficherListeFormations(formations) {
+        function afficherListeFormations(formations) {// permet d'afficher la recherche en html CSS
             sectionResultat.style.display = 'block';
             messageVide.style.display = 'none';
             sectionResultat.innerHTML = ''; 

@@ -40,7 +40,7 @@
                 <p id="txtAcceuil3">
                     Vous avez une question sur nos formations, nos admissions ou nos partenariats ? L'équipe de l'EFREI est à votre disposition pour vous accompagner dans votre démarche et vous apporter toutes les informations nécessaires. N'hésitez pas à nous contacter, nous vous répondrons dans les meilleurs délais.
                 </p>
-                <a id="btnRDV" href="contact.html">Prendre rendez-vous</a>
+                <a id="btnRDV" href="contact.php">Prendre rendez-vous</a>
             </div>
             <img id="imgContacteAcceuil" src="../img/ContacterNous.png" alt="ContacterNous">
         </section>
